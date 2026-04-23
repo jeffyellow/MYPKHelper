@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "MYPKHelper Region Selector",
+  "version": "1.0.0",
+  "description": "Select game screen region for MYPKHelper",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "选择监控区域"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost:*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

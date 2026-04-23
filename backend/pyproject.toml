@@ -1,0 +1,9 @@
+[project]
+name = "mypkhelper-backend"
+version = "0.1.0"
+description = "MYPKHelper 后端服务"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
